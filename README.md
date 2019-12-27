@@ -8,7 +8,7 @@ $(document).ready(function(){
   });
 ```
 
-- Learned how to target HTML elements with jQuery. Can work as follows:
+- Learned how to target HTML elements with jQuery and manipulate them accordingly. Can work as follows:
 
     - Selectors: Takes the the element based on its selector name and executes subsequent code on all elements of that selector. Example:
 
@@ -21,15 +21,15 @@ $(document).ready(function(){
     - Class: Takes the the element based on its class name and executes subsequent code on all elements with that class. Example:
 
     ```
-    $(".well").addClass("animated shake")
+    $(".well").css("color","blue");
     ```
 
-    Would apply additional classes of "animated" and "shake" to all elements currently containing the class "well". Note requires a period before class name, as in CSS.
+    Would change text color of all elements currently containing the class "well" to blue. Note requires a period before class name, as in CSS.
 
     - ID: Takes the the element based on its id and executes subsequent code on all elements with that id. Example:
 
     ```
-    $("#target3").addClass("animated fadeOut")
+    $("#target3").remove();
     ```
 
-    Would apply classes of "animated" and "fadeOut" to the element with id "target3". Note requires a hash before class name, as in CSS.
+    Would remove the element with id "target3". Note requires a hash before class name, as in CSS.
