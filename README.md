@@ -33,3 +33,11 @@ $(document).ready(function(){
     ```
 
     Would remove the element with id "target3". Note requires a hash before class name, as in CSS.
+
+- In addition to above learned to use other functions such as:
+    - removeClass(): Removes class from element.
+    - disable(): Element remains visible but is disabled therefore not accessible.
+    - html(): Alters html of an element. Text can also be altered at the same time.
+    - text(): Alters text of an element without compromising HTML.
+    - appendTo(): Takes an element and moves it by appends it to another, e.g. from one div to another.
+    - clone(): Creates a copy of the element. Can then be chained to other functions, i.e. appendTo(), in order to do something with the clone.
