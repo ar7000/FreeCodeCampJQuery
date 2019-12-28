@@ -41,3 +41,24 @@ $(document).ready(function(){
     - text(): Alters text of an element without compromising HTML.
     - appendTo(): Takes an element and moves it by appends it to another, e.g. from one div to another.
     - clone(): Creates a copy of the element. Can then be chained to other functions, i.e. appendTo(), in order to do something with the clone.
+
+- Learned to target parent elements and child elements as follows:
+    - Parent: Can access the parent of a given child element. Example:
+    ```
+    $("#text").parent().css("background-color","red")
+    ```
+    Would apply a background color of red to the parent of the element with id "text".
+
+    - Children: Works as above, but will apply change to all children of the given parent. Example:
+    ```
+    $("#text-box").child().css("color","green")
+    ```
+    Would give all children of the element with id "text-box" green text.
+    
+        - Also works with :nth-child(n) pseudo class, as in CSS, to target a specific child of set of children. As in CSS, nth-child is *not* zero indexed.
+
+- Learned to target odds and evens as follows:
+```
+$(".feature-img:even").addClass("animated hinge")
+```
+Would add hinge animation to all items of an even index. **Note:** Elements are zero indexed when using odd or even selectors, meaning in the above the "even" selector will in fact apply the given function to the first item with the class "feature-img" (index 0), and every second item thereafter, meaning the function is actually applied to the elements of an odd number as they are displayed (first, third, fifth etc.).
